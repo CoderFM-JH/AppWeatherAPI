@@ -1,0 +1,111 @@
+Your environment has been set up for using Node.js 20.19.4 (x64) and npm.
+
+C:\Windows\System32>C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI
+'C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Windows\System32>cd C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI
+
+C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI>npm create vite@latest
+
+> npx
+> create-vite
+
+|
+o  Project name:
+|  AppWeatherAPI
+|
+o  Package name:
+|  react
+|
+o  Select a framework:
+|  React
+|
+o  Select a variant:
+|  JavaScript
+|
+o  Scaffolding project in C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI...
+|
+—  Done. Now run:
+
+  cd AppWeatherAPI
+  npm install
+  npm run dev
+
+
+C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI> cd AppWeatherAPI
+
+C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI>  npm install
+
+added 197 packages, and audited 198 packages in 1m
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI>npm install tailwindcss @tailwindcss/vite
+
+added 40 packages, and audited 238 packages in 19s
+
+45 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI>npm run dev
+
+> react@0.0.0 dev
+> vite
+
+
+  VITE v7.1.2  ready in 4832 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+12:46:51 [vite] vite.config.js changed, restarting server...
+12:46:51 [vite] vite.config.js changed, restarting server... (x2)
+X [ERROR] Expected identifier but found "import"
+
+    vite.config.js:10:5:
+      10 │     @import "tailwindcss";
+         ╵      ~~~~~~
+
+failed to load config from C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI\vite.config.js
+12:46:51 [vite] Build failed with 1 error:
+vite.config.js:10:5: ERROR: Expected identifier but found "import"
+12:46:51 [vite] server restart failed
+12:46:55 [vite] vite.config.js changed, restarting server...
+12:46:55 [vite] vite.config.js changed, restarting server... (x2)
+12:46:56 [vite] server restarted.
+12:47:01 [vite] vite.config.js changed, restarting server...
+X [ERROR] Expected identifier but found "import"
+
+    vite.config.js:4:1:
+      4 │ @import "tailwindcss";
+        ╵  ~~~~~~
+
+failed to load config from C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI\vite.config.js
+12:47:01 [vite] Build failed with 1 error:
+vite.config.js:4:1: ERROR: Expected identifier but found "import"
+12:47:01 [vite] server restart failed
+12:47:05 [vite] vite.config.js changed, restarting server...
+12:47:05 [vite] server restarted.
+12:47:20 [vite] vite.config.js changed, restarting server...
+12:47:21 [vite] server restarted.
+12:47:22 [vite] vite.config.js changed, restarting server...
+12:47:22 [vite] vite.config.js changed, restarting server... (x2)
+12:47:22 [vite] server restarted.
+
+C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI>npm run dev
+
+> react@0.0.0 dev
+> vite
+
+
+  VITE v7.1.2  ready in 6133 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
