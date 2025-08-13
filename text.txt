@@ -109,3 +109,10 @@ C:\Users\JAZON\Desktop\learn_React\exercice04_weatherAPI\AppWeatherAPI>npm run d
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
   ➜  press h + enter to show help
+
+
+
+git add .
+git commit -m "Premier commit"
+git branch -M main
+git push -u origin main
