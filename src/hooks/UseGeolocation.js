@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function UseLocation () {
+export default function UseGeolocation () {
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
    const [data, setData] = useState({});
@@ -11,7 +11,15 @@ export default function UseLocation () {
          setError(null);
          setData(e.coords);
       }
+
+      const onError = (e) => {
+         setError(e);
+         setLoading(false);
+      }
+
       navigator.geolocation.getCurrentPosition(onSucces, onError)
    }, [] )
+
+   return {loading, error, data}
 
 }
