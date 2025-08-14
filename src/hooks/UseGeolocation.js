@@ -13,7 +13,7 @@ export default function UseGeolocation () {
       }
 
       const onError = (e) => {
-         setError(e);
+         setError(e); 
          setLoading(false);
       }
 
