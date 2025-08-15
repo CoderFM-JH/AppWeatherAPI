@@ -4,6 +4,7 @@ const weatherUrl = 'https://api.openweathermap.org/data/2.5';
 const currentWeatherUrl = `${weatherUrl}/weather`;
 
 const apikey = import.meta.env.VITE_API_KEY ;
+// const { data, error, isLoading } = useQuery(["weather", coords], fetchWeatherData);
 
 export const fetchWeatherByCoords = async (geoData) => {
    if (!geoData?.latitude || !geoData?.longitude){
@@ -17,7 +18,21 @@ export const fetchWeatherByCoords = async (geoData) => {
          appid: apikey,
       },
    });
+   console.log(response);
+   return ({currentWeather: response.data});
+}
 
+export const fetchWeatherByCity = async (searchQuery) => {
+   if (!searchQuery){
+      return ;
+   }
+   const response = await axios.get(currentWeatherUrl, { 
+      params:{
+         q: searchQuery,
+         units: 'metric',
+         appid: apikey,
+      },
+   });
    console.log(response);
    return ({currentWeather: response.data});
 }
