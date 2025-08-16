@@ -15,3 +15,15 @@ export const getFormatedDate = () => {
    return currentDate.toLocaleString('en-US', options);
    // return date.toLocaleDateString('fr-FR');
 }
+
+export const getShortDate = (timestamp) => {
+   const date = new Date(timestamp * 100);
+
+   const options = {
+      day: 'numeric',
+      month: 'long',
+      hour: '2-digit'
+   };
+
+   return date.toLocaleString('en-US', options);
+}

@@ -5,7 +5,7 @@ export function WeatherCard({data}) {
    const {name, main, sys, wind, weather} = data;
    return(
       <>
-         <div className="flex flex-col items-center bg-gray-000  rounded-xl"> 
+         <div className="flex flex-col items-center bg-gray-000 w-max-20 rounded-xl"> 
 
             <h2 className="text-lg font-bold mt-0">
                Weather for {name}, {sys.country}
@@ -43,7 +43,7 @@ export function WeatherCard({data}) {
                </div>
             </div>
 
-               <div className='flex justify-between text-sm font-bold w-full max-w-md'>
+               <div className='flex justify-between text-sm font-bold w-80 max-w-md'>
                   <div>
                      Wind <br /> {Math.round(wind.speed)}
                   </div>
