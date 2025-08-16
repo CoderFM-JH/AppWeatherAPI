@@ -4,6 +4,8 @@ const weatherUrl = 'https://api.openweathermap.org/data/2.5';
 const currentWeatherUrl = `${weatherUrl}/weather`;
 const forecastWeatherUrl = `${weatherUrl}/forecast`;
 
+export const weatherIconUrl = 'https://openweathermap.org/img/wn/';
+
 const apikey = import.meta.env.VITE_API_KEY ;
 // const { data, error, isLoading } = useQuery(["weather", coords], fetchWeatherData);
 
