@@ -11,6 +11,8 @@ export function UseFetchWeather(geoData, searchQuery) {
             ? fetchWeatherByCity(searchQuery) 
             : fetchWeatherByCoords(geoData),
       enabled: (!!geoData?.latitude && !!geoData?.longitude) || !!searchQuery,
+      staleTime: 60 * 60 * 1000,
+      cacheTime: 60 * 60 * 1000,
    });
 
    return {
